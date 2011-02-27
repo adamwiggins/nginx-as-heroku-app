@@ -1,6 +1,7 @@
 
 #user  nobody;
 worker_processes  1;
+daemon off;
 
 #error_log  logs/error.log;
 #error_log  logs/error.log  notice;
@@ -33,7 +34,7 @@ http {
     #gzip  on;
 
     server {
-        listen       80;
+        listen       <%= ENV['PORT'] %>;
         server_name  localhost;
 
         #charset koi8-r;
