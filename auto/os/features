@@ -311,7 +311,7 @@ ngx_feature_run=no
 ngx_feature_incs="#include <sys/socket.h>"
 ngx_feature_path=
 ngx_feature_libs=
-ngx_feature_test="accept4(0, NULL, NULL, SOCK_NONBLOCK)"
+ngx_feature_test="xxxaccept4(0, NULL, NULL, SOCK_NONBLOCK)"
 . auto/feature
 
 if [ $NGX_FILE_AIO = YES ]; then
